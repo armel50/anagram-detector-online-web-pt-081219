@@ -10,7 +10,7 @@ class Anagram
     possible_anagram.each do |el|
       checker = el.all? do |letter|
         letter =@word[i]
-        i++
+        i += 1
       end 
       p el if checker
     end
