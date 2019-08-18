@@ -12,7 +12,7 @@ class Anagram
     possible_anagram.each do |el|
       splited_el = el.split("").sort
      
-      puts @array_of_anagrams if @splited_word == splited_el
+      p @array_of_anagrams if @splited_word == splited_el
       
     end   
   end
