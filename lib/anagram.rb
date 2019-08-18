@@ -1,8 +1,6 @@
 class Anagram
   attr_accessor :word, :array_of_anagrams
-  
-   @array_of_anagrams = []
-  
+
   def initialize(word)
     @word = word 
     @splited_word = word.split("").sort
