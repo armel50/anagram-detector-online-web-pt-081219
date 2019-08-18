@@ -18,7 +18,7 @@ class Anagram
       
     end  
     @array_of_anagrams = array 
-   p @array_of_anagrams
+
   end
   
 end
