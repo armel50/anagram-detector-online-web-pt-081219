@@ -9,12 +9,16 @@ class Anagram
   end
   
   def match(possible_anagram)
+     array = []
     possible_anagram.each do |el|
       splited_el = el.split("").sort
      
-      p @array_of_anagrams if @splited_word == splited_el
+     
+      array << el if @splited_word == splited_el
       
-    end   
+    end  
+    @array_of_anagrams = array 
+   p @array_of_anagrams
   end
   
 end
