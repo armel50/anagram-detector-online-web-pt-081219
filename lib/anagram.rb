@@ -1,7 +1,7 @@
 class Anagram
   attr_accessor :word, :array_of_anagrams
   
-  @array_of_anagrams = []
+  
   
   def initialize(word)
     @word = word 
@@ -11,6 +11,7 @@ class Anagram
   def match(possible_anagram)
     possible_anagram.each do |el|
       splited_el = el.split("").sort
+      @array_of_anagrams = []
       @array_of_anagrams << el if @splited_word == splited_el
       
     end   
